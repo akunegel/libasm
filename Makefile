@@ -15,5 +15,6 @@ fclean:
 	rm -f srcs/*.o libasm.a tests
 
 test:
-	gcc -g -o tests test.c -L. -lasm
+	gcc -g -o tests test.c -L. -lasm 
 
+re: fclean all
